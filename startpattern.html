@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> -->
+<!-- <body>
+    
+</body>
+<script>
+   // ===============Right half pyramid=========================
+   document.write("(1)Right half pyramid")
+        document.write("<br>")
+for(let i=1; i<=5; i++){
+for(let j=1; j<=i; j++){
+    document.write("*"," ")
+}document.write(" <br>")
+}
+document.write("<br>")
+document.write("<br>")
+ // =============== INVERTED Right half pyramid=========================
+ document.write("(2)Right half pyramid")
+ document.write("<br>")
+for(let i=1; i<=5; i++){
+    for(j=5; j>=i; j--){
+        document.write("*"," ")
+    }document.write("<br>")
+}
+
+document.write("<br>")
+document.write("<br>")
+// ===============Left half pyramid=========================
+document.write("(3)Left half pyramid")
+document.write("<br>")
+for(i=1; i<=5; i++){
+for(let j=4; j>=i; j--){
+    document.write("&nbsp"," ")  
+}
+for(let k=1; k<=i; k++){
+ document.write("*"," ")
+}
+document.write("<br>")
+}
+document.write("<br>")
+// ===============INVERTED Left half pyramid=========================
+document.write("(4) inverted half pyramid")
+document.write("<br>")
+for (let i=1; i<=5; i++){
+    for(let j=1; j<=i; j++){
+        document.write("&nbsp"," ")
+    }
+    for(let k=5; k>=i; k--){
+        document.write("*"," ")
+    } document.write("<br>")
+}
+document.write("<br>")
+// ======full pyramid==============
+document.write("(5) Full pyramid")
+document.write("<br>")
+for (let i=1; i<=5; i++){
+    for(let j=5; j>=i; j--){
+        document.write("&nbsp"," ")
+    }
+    for(let k=1; k<=i; k++){
+        document.write("*","&nbsp&nbsp ")
+    }
+    document.write("<br>")
+}
+
+document.write("<br>")
+document.write("<br>")
+
+// ====== revese full pyramid==============
+document.write("(6) reverse full pyramid")
+document.write("<br>")
+for (let i = 5; i >= 1; i--) {
+    for (let j = 5; j >= i; j--) {
+        document.write("&nbsp&nbsp", " ")
+    }
+    for (let k = 1; k <= i; k++) {
+        document.write("*", " &nbsp&nbsp ")
+    }
+    document.write("<br>")
+}
+document.write("<br>")
+document.write("<br>")
+// ===========================diagonal but not perfect==================
+document.write("(7) diagonal")
+document.write("<br>")
+
+for (let i=1; i<=4; i++){
+    for(let j=4; j>=i; j--){
+        document.write("&nbsp"," ")
+    }
+    for(let k=1; k<=i; k++){
+        document.write("*","&nbsp&nbsp ")
+    }
+    document.write("<br>")
+}
+for (let i = 3; i >= 1; i--) {
+    for (let j = 3; j >= i; j--) {
+        document.write("&nbsp&nbsp", " ")
+    }
+    for (let k = 1; k <= i; k++) {
+        document.write("*", " &nbsp&nbsp ")
+    }
+    document.write("<br>")
+}
+
+document.write("<br>")
+document.write("<br>")
+// =======================(squ..)========Rhombus===========================
+// for(let i=1; i<=5; i++){
+//     for(let j=1; j<=5; j++){
+//         document.write("*"," ")
+//     }document.write("<br>")
+// }let k=5; k>i; k--)
+
+// ---------------------------------------------------------
+document.write("(8) Rhombus ")
+document.write("<br>")
+for(let i=1; i<=5; i++){
+    for(let k=1; k<=i; k++){
+        document.write("&nbsp&nbsp;")
+    }
+    for(let j=1; j<=5; j++){
+        document.write("*"," ")
+    }
+  
+    document.write("<br>")
+}
+
+</script> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      margin: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <button id="createButton">Create Box</button>
+</div>
+
+<script>
+  function createBox() {
+    var box = document.createElement('div');
+    box.className = 'box'; 
+    box.textContent = 'Box'; 
+    document.getElementById('container').appendChild(box);
+
+    box.addEventListener('click', function() {
+      this.parentNode.removeChild(this);
+    });
+  }
+
+  document.getElementById('createButton').addEventListener('click', createBox);
+</script>
+
+</body>
+</html>
+
+</html> -->
+
+
