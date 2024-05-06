@@ -9,11 +9,11 @@
     <script>
     
 
-    for(let i=0;i<=4; i++){
-        for(let j=0; j<=4-i; j++){
-            document.write("*")
-        }document.write("<br>")
-    }
+    // for(let i=0;i<=4; i++){
+    //     for(let j=0; j<=4-i; j++){
+    //         document.write("*")
+    //     }document.write("<br>")
+    // }
 
 ///////////////////////empty array  question=68 ////////////////////////
 
@@ -61,6 +61,183 @@
 // }
 
 // document.write(mul(4)(3)(4)); 
+
+////////////////question-67///////////
+// function myFirst() {
+//     document.write("Hello");
+// }
+
+// function mySecond() {
+//   document.write("Goodbye");
+// }
+// myFirst();
+
+// mySecond();
+
+
+// function greet(name, callback) {
+//     console.log("Hello, " + name + "!");
+//     callback();
+// }
+
+// function sayGoodbye() {
+//     console.log("Goodbye!");
+// }
+
+// greet("poonam", sayGoodbye);
+
+///////////////question=68////////////////
+// function r(str) {
+//     let rs = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         rs += str[i];
+//     }
+//     return rs;
+// }
+
+// // Example usage:
+// const originalString = "Hello i am poonam";
+// const rs = r(originalString);
+// console.log(rs);
+
+// let x="hello i am poonam";
+// for(let i=x.length-1; i>=0; i--){
+//     console.log(x[i])
+//     document.write(x[i])
+// }
+
+
+
+// ====================================4====factorial====================
+//  let a= 1;
+//  function fact(b){
+//     for(let i=1; i<=b; i++){
+//        a=a*i;
+      
+//     }
+//  document.write(a)
+//  }
+//  fact(4)
+
+                        //   PRIME NUMBER //
+
+// let no = 11;
+//                 let temp = 0;
+//                 for (let i = 2; i <= no - 1; i++) {
+//                     if (no % i == 0) {
+//                         temp++;
+//                     }
+//                 }
+//                 if (temp== 0) {
+//                     document.write("it's a prime number")
+//                 }
+//                 else {
+//                     document.write("it's not a prime number")
+//                 }
+
+// =========================fibo==================================
+// let a=0 , b=1;
+//         document.write(a ," ",b);
+//         let c;
+//         for(let i=1; i<=10; i++){
+//             c=a+b;
+//             document.write(" ",c);
+//             a=b;
+//             b=c;
+//         }
+
+// for(i=1; i<=10; i++){
+//         let fac =  0;
+//         for(j=1; j<=10; j++){
+//             if(i%j == 0){
+//                 fac++
+//              }
+//         }
+//         if(fac==2){
+//             console.log(i,"its prime")
+//         }
+        
+//     }
+
+
+// let a = 12;
+//     let fact = 0;
+//     for(i=1; i<=a; i++){
+//         if(a%i === 0){
+//             fact++
+
+//         }
+//     }
+//     if(fact === 2){
+//         console.log(a,"its prime")
+//     }
+//     else{
+//         console.log(i,"it isn't prime")
+//     }
+
+
+// let a = "1634";
+//     let sum  = 0;
+
+//     for(i=0; i<a.length; i++){
+//         sum += parseInt(a[i]) ** a.length
+//     }
+//     if(sum === parseInt(a)){
+//         console.log("Its an Armstrong Number")
+//     }
+//     else{
+//         console.log("It isn't an Armstrong Number")
+
+//     }
+
+   
+  // sum=0;
+        //            let number=153;
+        //             let n=number;
+        //             while(n!=0){
+        //                  r=n%10;
+        //                 sum=sum+(r*r*r);
+        //                 n=n/10;
+        //             }
+        //             if(sum==number){
+        //                 document.write(number +"it is a armstrong number")
+        //             }
+        //             else{
+        //                 document.write(number +"invalid");
+        //             }
+
+
+
+
+//         // let a=parseInt(prompt("enter a num"));
+//         let a=prompt("enter a num")
+// let b="";
+// // let c=a.toString();
+// for(let i=a.length-1; i>=0; i--){
+//     b +=a[i]
+// };
+// if(a==b){
+//     document.write("it is palidrome",a)
+// }
+// else{
+//     document.write("it is not palidrome",a)
+// }
+
+
+
+
+
+// let a= "i am poonam from rewa";
+// let b="AEIOUaeiou"
+// for(let i=0; i<=a.length; i++){
+//   let c=a[i]
+//   if(b.includes(c)){
+//     document.write(c," ",i,"<br>")
+//   }
+// }
+
+
+
 
     </script>
 </body>

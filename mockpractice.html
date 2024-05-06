@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 43</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- <h1>Empty An array</h1> -->
+    <script>
+        // program to reverse a string
+
+        // function reverseString(str) {
+
+        // empty string
+        // let newString = "";
+        // for (let i = str.length - 1; i >= 0; i--) {
+        //     newString += str[i];
+        // }
+        // return newString;
+        // }
+
+        // // take input from the user
+        // const string = prompt('Enter a string: ');
+
+        // const result = reverseString(string);
+        // console.log(result);
+
+
+        ////////////question=69/////////////////////
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // let result = Array.isArray(fruits)
+        // console.log(result)
+
+        ////////////////question=70////////////////
+        // let Arr = ['a','b','c','d','e'];
+
+        // console.log("Array Elements: " + Arr);
+        // console.log("Array Length: " + Arr.length);
+
+        // function emptyArray() {
+        //     Arr = [];
+        //     console.log("Empty Array Elements: " + Arr);
+        //     console.log("Empty Array Length: " + Arr.length);
+        // }
+
+        // emptyArray();
+
+        /////////////////////////////////////////empty array
+        // let a=['a','b','c','d'];
+        // a=[];
+        // console.log(a);
+
+        // let myArray = [1, 2, 3, 4, 5];
+        //       myArray.length = 0;
+
+
+        ///////////////////question-71//////////////////////
+        // {let a = parseInt(prompt('enter something to check a number'))
+        // document.write(Number.isInteger(a));}
+        // console.log(Number.isInteger(0));
+        // console.log(Number.isInteger(2));
+
+
+        //////////////////////question-73///////////////////////
+        // const originalArray = [1, 2, 3,4,5];
+        // const duplicatedArray = originalArray.concat(originalArray);
+
+        // console.log(duplicatedArray);
+
+        // const originalArray = [1, 2, 3];
+        // const duplicatedArray = [...originalArray, ...originalArray];
+
+        // console.log(duplicatedArray); // Output: [1, 2, 3, 1, 2, 3]
+
+        //////////////////////question-74////////////////////////
+        // function mul(x) {
+        //     return function(y) {
+        //         return function(z) {
+        //             return x * y * z;
+        //         };
+        //     };
+        // }
+
+        // document.write(mul(2)(3)(4)); 
+
+        // =================================doubt=================================
+        // function mul(x,y,z){
+        //     return x*y*z;
+        // }
+        // document.write(mul(2,3,4))
+        // document.write("<br>")
+
+        // function mul(x) {
+        //     return function(y) {
+        //         return function(z) {
+        //             return x * y * z;
+        //         };
+        //     };
+        // }
+
+        // document.write(mul(4)(3)(4)); 
+
+        //////////////////question-75==============
+        // function createBase(baseValue) {
+        //   return function (num) {
+        //     return baseValue + num;
+        //   };
+        // }
+        // // Example usage:
+        // const addSix = createBase(6);
+
+        // console.log(addSix(10)); 
+        // console.log(addSix(21)); 
+
+        // function fizzBuzz(n) {
+        //   for (let i = 1; i <= n; i++) {
+        //     if (i % 3 === 0 && i % 5 === 0) {
+        //       document.write("FizzBuzz"," ");
+        //     } else if (i % 3 === 0) {
+        //       document.write("Fizz"," ");
+        //     } else if (i % 5 === 0) {
+        //       document.write("Buzz"," ");
+        //     } 
+        //     else {
+        //      document.write(i,"<br>");
+        //     }
+        //   }
+        // }fizzBuzz(100)
+
+
+        //   for(let i=1; i<=100; i++){
+        //     if(i%3==0){
+        //         document.write(i,"FIZZ","<br>")
+        //     }
+        //     else if(i%5==0){
+        //         document.write(i,"BUZZ","<br>")
+        //     }
+        //     else if(i%3==0 && i%5==0){
+        //         document.write(i,"FIZZBUZZ","<br>")
+        //     }
+        //   }
+
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 3 == 0 && i % 5 == 0) {
+        //         document.write(i, " ", "FIZZBUZZ", "<br>");
+        //     } else if (i % 3 == 0) {
+        //         document.write(i, " ", "FIZZ", "<br>");
+        //     } else if (i % 5 == 0) {
+        //         document.write(i, " ", "BUZZ", "<br>");
+        //     }
+        // }
+
+
+
+
+
+
+
+        // console.log(result)
+
+        // function areAnagrams(str1, str2) {
+        //   // Remove whitespace and convert to lowercase for case-insensitive comparison
+        //   const normalizedStr1 = str1.replace(/\s/g, '').toLowerCase();
+        //   const normalizedStr2 = str2.replace(/\s/g, '').toLowerCase();
+
+        //   // Sort the characters of each string and compare them
+        //   const sortedStr1 = normalizedStr1.split('').sort().join('');
+        //   const sortedStr2 = normalizedStr2.split('').sort().join('');
+
+        //   // Check if the sorted strings are equal
+        //   return sortedStr1 === sortedStr2;
+        // }
+
+        // // Example usage:
+        // const str1 = "mary";
+        // const str2 = "army";
+
+        // console.log(areAnagrams(str1, str2)); // Output: true
+
+        // function outer() {
+        //         let str = "Hello";
+        //         function inner() {
+        //             console.log(str);
+        //         }
+        //         return inner;
+        //     }
+        //     const fun = outer();
+        //     fun();
+
+
+
+        // console.log(Boolean(0));       // Output: false
+        // console.log(Boolean(1));       // Output: true
+        // console.log(Boolean(''));      // Output: false
+        // console.log(Boolean('hello')); // Output: true
+        // console.log(Boolean(null));    // Output: false
+        // console.log(Boolean(undefined)); // Output: false
+
+        // console.log(!0);               // Output: true
+        // console.log(!'');              // Output: true
+        // console.log(!null);            // Output: true
+        // console.log(!undefined);       // Output: true
+
+
+        // function multiply(x) {
+        //   return function(y) {
+        //     return x * y;
+        //   };
+        // }
+
+        // // Example usage:
+        // const result = multiply(5)(6);
+        // console.log(result); // Output: 30
+
+        // const array = [1, 2, 3, 4, 5];
+
+        // for (let i = 0; i < array.length; i++) {
+        //   console.log(array[i]);
+        // }
+
+        // const array = [1, 2, 3, 4, 5];
+
+        // // Modify the element at index 2
+        // array[2] = 10;
+
+        // console.log(array); // Output: [1, 2, 10, 4, 5]
+
+
+        // const array = [1, 2, 3, 4, 5];
+
+        // const element = 3;
+
+        // const foundElement = array.find(item => item === element);
+
+        // if (foundElement !== undefined) {
+        //   console.log("Element exists in the array");
+        // } else {
+        //   console.log("Element does not exist in the array");
+        // }
+
+        // const array = [5, 2, 8, 1, 3];
+
+        // // Sorting the array in ascending order
+        // array.sort();
+
+        // console.log(array); // Output: [1, 2, 3, 5, 8]
+
+        // function convertTo2DArray(arr, size) {
+        //   const result = [];
+        //   for (let i = 0; i < arr.length; i += size) {
+        //     result.push(arr.slice(i, i + size));
+        //   }
+        //   return result;
+        // }
+
+        // // Example usage:
+        // const oneDimArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // const twoDimArray = convertTo2DArray(oneDimArray, 3);
+        // console.log(twoDimArray);
+
+        // var a = parseInt(prompt("enter a no."))
+        // if (a % 3 === 0) {
+        //     console.log("true")
+        // }
+        // else {
+        //     console.log("false")
+        // }
+
+        // Create an array of objects
+        // const arrayOfObjects = [
+        //   { number: 5 },
+        //   { number: 10 },
+        //   { number: 15 },
+        //   { number: 21 },
+        //   { number: 25 },
+        // ];
+        // const divisibleBy3 = arrayOfObjects.filter(obj => obj.number % 3 === 0);
+        // console.log("Numbers divisible by 3:");
+        // console.log(divisibleBy3);
+
+
+
+        // function bubbleSort(arr) {
+        //   const len = arr.length;
+        //   for (let i = 0; i < len - 1; i++) {
+        //     for (let j = 0; j < len - 1 - i; j++) {
+        //       if (arr[j] > arr[j + 1]) {
+        //         // Swap elements if they are in the wrong order
+        //         const temp = arr[j];
+        //         arr[j] = arr[j + 1];
+        //         arr[j + 1] = temp;
+        //       }
+        //     }
+        //   }
+        //   return arr;
+        // }
+
+        // Example usage:
+        // const unsortedArray = [5, 3, 8, 1, 4];
+        // console.log("Unsorted array:", unsortedArray);
+
+        // const sortedArray = bubbleSort(unsortedArray);
+        // console.log("Sorted array:", sortedArray);
+
+
+        // Initialize an empty stack
+        // const stack = [];
+
+        // // Push elements onto the stack (LIFO)
+        // stack.push(10);
+        // stack.push(20);
+        // stack.push(30);
+
+        // console.log("Stack elements:", stack); // Output: [10, 20, 30]
+
+        // // Pop element from the stack (LIFO)
+        // const poppedElement = stack.pop();
+        // console.log("Popped element:", poppedElement); // Output: 30
+
+        // console.log("Stack after popping:", stack); // Output: [10, 20]
+
+        // function findPairsWithSum(array) {
+        //   const result = [];
+        //   const seen = {};
+
+        //   for (let num of array) {
+        //     const complement = 15 - num;
+        //     if (seen[complement]) {
+        //       result.push([complement, num]);
+        //     }
+        //     seen[num] = true;
+        //   }
+
+        //   return result;
+        // }
+
+        // // Example usage:
+        // const originalArray = [1, 5, 7, 10, 8, 6, 9];
+
+        // const pairs = findPairsWithSum(originalArray);
+        // console.log("Pairs with sum 15:", pairs);
+
+        ///////////////////////palindrone num////////////////
+        // let a = prompt("enter a name")
+        //         let b = ""
+        //         for (let i = a.length - 1; i >= 0; i--) {
+        //             b += a[i];
+        //         }
+        //         if (a == b) {
+        //             document.write(a, " Its a Palidrome")
+        //         }
+        //         else {
+        //             document.write(a, " It's not a Palidrome")
+        //         }
+
+        ///////////////////armstrong num///////////////////////
+        // sum=0;
+        //            let number=153;
+        //             let n=number;
+        //             while(n!=0){
+        //                  r=n%10;
+        //                 sum=sum+(r*r*r);
+        //                 n=n/10;
+        //             }
+        //             if(sum==number){
+        //                 document.write(number +"it is a armstrong number")
+        //             }
+        //             else{
+        //                 document.write(number +"invalid");
+        //             }
+
+
+        // let sum = 0;
+        // let number = 153;
+        // let n = number;
+
+        // while (n !== 0) {
+        //     let r = n % 10;
+        //     sum += r * r * r;
+        //     n = parseInt(n / 10) ;
+        // }
+
+        // if (sum === number) {
+        //     document.write(number + " is an Armstrong number");
+        // } else {
+        //     document.write(number + " is invalid");
+        // }
+
+        // let sum = 0;
+        // let number = prompt("Enter a number to check Armstrong");
+        // let n = parseInt(number); // Convert input string to an integer
+
+        // let temp = n; // Store the original number to compare later
+
+        // while (n !== 0) {
+        //     let r = n % 10;
+        //     sum += r * r * r;
+        //     n = parseInt(n / 10); // Integer division
+        // }
+
+        // if (sum === temp) { // Compare with the original number
+        //     document.write(temp + " is an Armstrong number");
+        // } else {
+        //     document.write(temp + " is invalid");
+        // }
+
+
+        // let no = 5;
+        //                 let temp = 0;
+        //                 for (let i = 2; i <= no - 1; i++) {
+        //                     if (no % i == 0) {
+        //                         temp++;
+        //                     }
+        //                 }
+        //                 if (temp== 0) {
+        //                     document.write("it's a prime number")
+        //                 }
+        //                 else {
+        //                     document.write("it's not a prime number")
+        //                 }
+
+
+
+        // let a= prompt('enter something to check palidrome')
+        // let b="";
+        // for(let i=a.length-1; i>=0; i--){
+        //     b +=a[i]
+        // }
+        // if (a==b){
+        //         document.write(a,"<br>","it is palidrome")
+        //     }
+        //     else{
+        //         document.write(a,"<br>","it is not palidrome")
+        //     }
+
+
+        // for(let i=1; i<=5; i++){
+        //     for(let j=1; j<=i; j++){
+        //         document.write("&nbsp&nbsp"," ")
+        //     }
+        //     for(let k=5; k>=i; k--){
+        //         document.write("*"," ")
+        //     }document.write("<br>")
+        // }
+
+        // for(i=1; i<=5; i++){
+        // for(let j=4; j>=i; j--){
+        //     document.write("&nbsp&nbsp"," ")
+        // }
+        // for(let k=1; k<=i; k++){
+        //  document.write("*"," ")
+        // }
+        // document.write("<br>")
+        // }
+
+        // for (let i=1; i<=5; i++){
+        //     for(let j=5; j>=i; j--){
+        //         document.write("&nbsp"," ")
+        //     }
+        //     for(let k=1; k<=i; k++){
+        //         document.write("*","&nbsp&nbsp ")
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j < i; j++) {
+        //         document.write("&nbsp;&nbsp;&nbsp;");
+        //     }
+        //     for (let k = 5; k >= i; k--) {
+        //         document.write("*&nbsp;&nbsp;&nbsp;");
+        //     }
+        //     document.write("<br>");
+        // }
+
+        ////////////////////////////////////question==80/////////////////
+        //         var y =1;
+        //         if(function f(){}){
+        //             y += typeof f;
+        //         }
+        // console.log(y);
+
+        ////////////////////////////////////question==81/////////////////
+        // (function(){
+        //     var a=b=5;
+        // })();
+        // console.log(b)
+
+
+        //////////////////////////sum of even number///////////////////////
+        // let a=0;
+        // for(let i=2; i<=6; i+=2){
+        // document.write(i,"<br>")
+        // a += i;
+
+        // }
+        // document.write(a)
+
+
+
+        // ---------------call-----------------
+        // let obj = { name: "Harsh", address: "rewa", contact: "123456" };
+
+        // function hello() {
+        //     console.log("this is detail", this.name, this.address, this.contact);
+        // };
+        // hello.call(obj);
+        // ------------------apply------------------------
+
+        // function hello(first, second) {
+        //     console.log(`this is detail ${this.name} ${this.address} ${this.contact} ${first}, ${second}`)
+        // };
+        // hello.apply(obj, ["hello", "good morning"]);
+
+        // -----------------------bind------------------------
+        // let final = hello.bind(obj, "hello sir ji", "good morning")
+        // final()
+
+
+
+
+        /////////////////////////largest second num////////////////////////////
+        //         let max=0
+        // let  x= [2,1,6,7,12,5]
+        // for(let i=0; i<x.length; i++){
+        // for(let j= i+1; j<x.length; j++){
+        // if(x[i]>x[j]){
+        //     max= x[i]
+        //     x[i]=x[j]
+        //     x[j]=max
+        // }
+        // }
+        // document.write(x[i]," ")
+        // }
+        // document.write("largest second",x[x.length-2])
+
+
+
+
+
+        let a="poonam";
+        let count=0;
+        for(let i=0; i<=a.length; i++){
+            
+            if(a[i]=="a" || a[i]=="e" || a[i]=="i" || a[i]=="o" || a[i]=="u"){
+// document.write(a[i]," ") 
+count= count+1;
+            }
+          
+        }   document.write(count," ")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // --------------------------------higher-order funtion----------------------
+
+// function callbackfunction(a, b) {
+//     console.log(" callback function", a * b);
+// }
+// function higherorder(fun) {
+//     fun(28, 10)
+//     // console.log("higher order fuction");
+// }
+// higherorder(callbackfunction);
+
+// function callback(a, b) {
+//     console.log("callback function", a * b);
+// }
+// function higherorder(funs) {
+//     funs(10, 20)
+//     console.log("higher order function");
+// }
+// higherorder(callback)
+ // ------------------------------------callback function---------------------------
+
+// function processArray(arr, callback) {
+//     for (let i = 0; i < arr.length; i++) {
+//         callback(arr[i]);
+//     }
+// }
+// let myArray = [1, 2, 3, 4, 5];
+// processArray(myArray, callback);
+
+// function callback(element) {
+//     document.write(element * 2);
+// }
+// ---------------------------------------closure function -------------------------
+
+// function Func() {
+//     let name = "Aman";
+//     function displayName() {
+//         console.log(name);
+//     }
+//     return displayName;
+// }
+
+// const myFunc = Func();
+// myFunc();
+
+
+// function outer(){
+//     let outervar="hello poonam";
+//     function inner(){
+//         console.log(outervar)
+//     }return inner
+// }
+// let clousre=outer()
+
+
+
+
+// let a= true;
+// let b= true;
+// console.log(a+b)
+
+
+
+
+// Regular arrow function with multiple parameters and multiple statements
+// const add = (a, b) => {
+//   return a + b;
+// };
+// const result = add(5, 3);
+// console.log(result);
+// Arrow function with single parameter and single statement
+// const square = x => x * x;
+
+// Arrow function with no parameter and single statement
+// const greet = () => "Hello!";
+
+
+
+//////////////dublicate number find///////////////////
+// const originalArray = [1, 2, 3, 4, 2, 5];
+// const duplicates = [];
+
+// for (let i = 0; i < array.length; i++) {
+//   for (let j = i + 1; j < array.length; j++) {
+//     if (array[i] === array[j] && !duplicates.includes(array[i])) {
+//       duplicates.push(array[i]);
+//     }
+//   }
+// }
+// document.write("Duplicate elements:", duplicates);
+
+
+
+// const duplicatesElements=originalArray.concat([...originalArray])
+// console.log(duplicatesElements);
+
+
+
+
+
+
+
+let a=[1,2,3,4,5,6,7,3,2,4];
+for(let i=1; i<a.length; i++){
+    for(let j=i+1; j<=a.length; j++){
+        if(a[i]==a[j]){
+            console.log("duplicate element is"+a[j]);
+            
+        }
+    }
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>

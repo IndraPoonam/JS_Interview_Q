@@ -1,11 +1,11 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head> -->
-<!-- <body>
+</head>  
+ <body>
     
 </body>
 <script>
@@ -46,14 +46,14 @@ document.write("<br>")
 // ===============INVERTED Left half pyramid=========================
 document.write("(4) inverted half pyramid")
 document.write("<br>")
-for (let i=1; i<=5; i++){
+ for (let i=1; i<=5; i++){
     for(let j=1; j<=i; j++){
         document.write("&nbsp"," ")
     }
     for(let k=5; k>=i; k--){
         document.write("*"," ")
     } document.write("<br>")
-}
+} 
 document.write("<br>")
 // ======full pyramid==============
 document.write("(5) Full pyramid")
@@ -128,53 +128,10 @@ for(let i=1; i<=5; i++){
         document.write("*"," ")
     }
   
-    document.write("<br>")
-}
+    document.write("<br>")}
 
-</script> -->
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript DOM Example</title>
-  <style>
-    .box {
-      width: 100px;
-      height: 100px;
-      background-color: skyblue;
-      margin: 20px;
-      display: inline-block;
-    }
-  </style>
-</head>
-<body>
-
-<div id="container">
-  <button id="createButton">Create Box</button>
-</div>
-
-<script>
-  function createBox() {
-    var box = document.createElement('div');
-    box.className = 'box'; 
-    box.textContent = 'Box'; 
-    document.getElementById('container').appendChild(box);
-
-    box.addEventListener('click', function() {
-      this.parentNode.removeChild(this);
-    });
-  }
-
-  document.getElementById('createButton').addEventListener('click', createBox);
 </script>
 
-</body>
-</html>
 
-</html> -->
 
 

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+// let globalVar = "I'm a global variable";
+
+// function someFunction() {
+//     document.write(globalVar); 
+// }
+
+// document.write(globalVar,"1"); 
+// ==================================
+// function someFunction() {
+//     let localVar = "I'm a local variable";
+//     console.log(localVar); // Accessible here
+// }
+// someFunction();
+// console.log(localVar); // Not accessible here, will result in an error
+// ======================block scope
+// if (true) {
+//     let blockVar = "I'm a block-scoped variable";
+//     console.log(blockVar); // Accessible here
+// }
+
+// console.log(blockVar); // Not accessible here, will result in an error
+
+// =====================fucntion scopr==========================
+
+// function someFunction() {
+//     if (true) {
+//         var functionScopedVar = "I'm a function-scoped variable";
+//     }
+//     console.log(functionScopedVar); // Accessible here
+// }
+
+// someFunction();
+// console.log(functionScopedVar); // Not accessible here, will result in an error
+
+
+// ============================object==============================
+// let person = {
+//     name: "John",
+//     age: 30,
+//     address: "123 Main St",
+//     sayHello: function() {
+//         console.log("Hello, my name is " + this.name + "!");
+//     }
+// };
+// console.log(person);
+// document.write(Object.keys(person));
+
+// =======================empty object-====================
+// let emptyObject = Object.create(null);
+
+// let emptyObject = new Object();
+// let emptyObject = {};
+// console.log(emptyObject);
+
+
+// ========================this keyword================
+// const person = {
+//   name: "poonam",
+//   number: 10,
+//   greet: function() {
+//     return "Hello, my name is " + this.name;
+//   }
+// };
+
+// console.log(person.greet()); 
+// ==========================empty array============================
+// let a =[];
+// console.log(a);
+
+// =========================CALLBACK FUNCTION=============================
+// function poonam(){
+//  console.log ("indian");
+// }
+// function singh(){
+//   console.log("Rewa")
+// }
+
+// function add(c,d, callback){
+//   // poonam();
+//   console.log(c+d)
+//   callback();
+// }
+// let a=20;
+// let b=30;
+// add(a,b,poonam);
+// add(40,25,singh);
+// add(3,5, function(){       //here we use asynchronomous function.....
+//  console.log("end");
+// })
+
+// function declartion====================================
+// function greet(name) {
+//     console.log("poonam");
+// }
+// greet();
+// ============function expression========================
+// var greet = function(name) {
+//     console.log("Poonam indian");
+// };
+// greet();
+
+
+// ===========================clousre function==========================
+// function paren() {
+//   let a = "this is poonam";
+//   function chil() {
+//     return a; 
+//   }
+//   return chil; 
+// }
+// let innerFunction = paren();
+// console.log(innerFunction()); 
+
+// ===================================lexical scope=========================
+// let data =10;
+// function first(){
+//   let poonam=100;
+//   console.log(data);
+// }
+// console.log(poonam);  //inner value not access out
+// first();
+
+
+// ===========================clousre function====================
+// function first(){
+//   let poonam=10090;
+//   function inner(){
+//   console.log(poonam);
+//   return poonam;
+// }
+// console.log(inner());
+// // inner();
+// }
+// first();
+
+// ====================================================
+
+// function first(){
+//   let a="this is poonam ";
+//  return function inner(){
+//   return a;
+// }
+// }
+// let inner=first();
+// console.log(inner());
+// console.dir(inner);      //we can see scope 
+
+// ==============================clousre with multiple function=======================
+
+// function outer(){
+//   let outValue =5;
+//  return function first(){
+//   let a=25;
+//  return function inner(){
+//   return a*outValue;
+// };
+// };
+// }
+// let first= outer();
+// let inner=first();
+// console.log(inner());
+// console.dir(inner);
+
+// =================================HIGH ORDER FUNCTIONS AND CALLBACK===================
+
+// function add(a,b,cb){
+//   let result= a+b;
+//   cb(result); 
+// }
+// function showResult(result){
+//   console.log(result);
+// }
+// add(8,2,showResult);
+
+//shortform then we use arrow function
+// add(2,8, (val)=> console.log(val));
+
+// add(500,50, (res)=>console.log(res));
+
+
+
+
+
+
+//  add(2,4,function(val){
+//  console.log(val);
+
+// });
+
+
+
+
+
+// function high(){
+//   console.log("pooam")
+// }
+// function call(){
+//   console.log("singh")
+// }
+// high(call());
+
+//=========================Passed by reference===========================//
+// in object=====================
+// let obj1={
+//   name: "poonam",
+//   place:"rewa",
+// }
+// let obj2=obj1;
+// obj2.pass="India";
+// console.log(obj1);
+// console.log(obj2);
+
+// // =====================in array=======
+
+// let arr1=[1,2,3];
+// let arr2= arr1;
+// arr2.push(4);
+// console.log(arr1);
+// console.log(arr2);
+
+
+
+
+
+// let a ="rewa";
+// // let b="aeiou";
+
+// // let c=b.includes(a);
+// // document.write(a[0]);
+
+// for(let i=0; i<a.length; i++){
+//   document.write(a[i]);
+// }
+
+
+// let a ="rewa"
+// let count=0;
+// for(let i=0; i<a.length; i++){
+// if(a[i]=="a"|| a[i]=="e"||a[i]=="O"||a[i]=="i"||a[i]=="u"){
+// count=count+1;
+// }
+// }
+// document.write(count);
+
+
+// function poonam(){
+//   let a="anshuman"
+//   document.write("i am indian","<br>",a)
+// }
+// function singh(){
+//   document.write("i belong to Madhya pradesh")
+// }
+// poonam(singh());
+
+
+
+
+</script>  
+</body>
+</html>
