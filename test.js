@@ -29,5 +29,6 @@ if(a==b){
     console.log("it is palidrome")
 }
 else{
+    
     console.log("it is not palidrome")
 }
