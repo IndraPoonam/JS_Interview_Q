@@ -7,12 +7,12 @@
 </head>
 <body>
     <script>
-        
+
         ///////////////question-1///////////////////
 
-// let n=[2,4,6,8,10];
-// let p=n.map((m)=>m*2);
-// document.write(p);
+let n=[2,4,6,8,10];
+let p=n.map((m)=>m*2);
+document.write(p);
 
 
 ////////////////question-2/////////////////
@@ -22,8 +22,164 @@ const capitalizedNames = names.map(name => name.replace(/^\w/, c => c.toUpperCas
 document.write(capitalizedNames); 
 
 
+const names = ["apple", "plum", "kiwi", "watermelon"];
+const capitalizedNames = names.map(name => name.charAt(0).toUpperCase() + name.slice(1));
+
+document.write(capitalizedNames);
+//////////////////////////////////////common element(QUESTION=1)/////////////////////////////
+
+function common(x,y){
+    return x.filter(e=>y.includes(e))
+}
+const x=[2,3,4,5,6];
+const y=[7,8,4,3,2];
+const commonElement =common(x,y);
+document.write(commonElement)
+
+///////////////////////////////////////////////////////(QUESTION=2)////////////////////////////
+       
+
+        let x = ["apple", "ram", "poonam", "om"];
+
+x.sort((a, b) => a.length - b.length);
+
+for (let i = 0; i < x.length; i++) {
+    document.write(x[i], " ");
+}
+
+/////////////////////////////////////////////////(QUESTION=3)//////////////////////
+let a=1;
+for(let i=1; i<=5; i++){
+ a=a*i;
+} 
+document.write(a)
+
+// / =========================fibo series ==================================
+let a=0 , b=1;
+        document.write(a ," ",b);
+        let c;
+        for(let i=1; i<=10; i++){
+            c=a+b;
+            document.write(" ",c);
+            a=b;
+            b=c;
+        }
+// ============================palidrome-==============================
+let a=propmt("enter a num");
+let b=" ";
+for(let i=a.length-1; i>=0; i--){
+    b +=a[i]
+};
+if(a==b){
+    console.log("it is palidrome")
+}
+else{
+    
+    console.log("it is not palidrome")
+}
+
+////////////////////////////////////REMOVE//////////////////////////////////
+let a=[1,2,3,4,5,6,7,3,2,4];
+for(let i=0; i<a.length; i++){
+    for(let j=i+1; j<=a.length; j++){
+        if(a[i]==a[j]){
+            console.log("duplicate element is"+a[j]);
+            
+        }
+    }
+}
+
+// ==============================================QUESTION=7'====================================
+   let max=0
+        let  x= [8,9,5,3,2,16,6]
+        for(let i=0; i<x.length; i++){
+        for(let j= i+1; j<x.length; j++){
+        if(x[i]>x[j]){
+            max= x[i]
+            x[i]=x[j]
+            x[j]=max
+        }
+        }
+        document.write(x[i]," ")
+        }
+        document.write("largest no",x[x.length-1])
 
 
+///////////////////////////////////smallest number/////////////////////////////////
+let max=0
+        let  x= [8,9,5,3,2,16,6]
+        for(let i=0; i<x.length; i++){
+        for(let j= i+1; j<x.length; j++){
+        if(x[i]<x[j]){
+            max= x[i]
+            x[i]=x[j]
+            x[j]=max
+        }
+        }
+        document.write(x[i]," ")
+        }
+        document.write("small no",x[x.length-1])
+/////////////////////////////only SMALL NUMBER FIND///////////////////////////////////////
+let x=[3,6,2,8,10,4];
+let small=x[0];
+for(let i=0; i<x.length; i++){
+if (x[i]<small){
+small=x[i]
+}
+}document.write(small);
+
+///////////////////////////////date//////////////////////////
+const now = new Date();
+        document.write("Today is: " + new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(now));
+        <br/>
+        document.write("Current time is: " + now.toLocaleTimeString('en-US', {hour: 'numeric', minute: '2-digit', second: '2-digit'}));
+
+////////////////////////////area of triagnle///////////////////////////////////
+
+function calculateArea(a, b, c) {
+    var s = (a + b + c) / 2;
+    var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));    
+   return area;
+}
+var side1 = 5;
+var side2 = 6;
+var side3 = 7;
+var area = calculateArea(side1, side2, side3);
+console.log("The area of the triangle with sides", area);
+
+/////////////////////////////leap year check///////////////////////////////
+let a= prompt("enter a year");
+if(a%4==0){
+    document.write("it is leap year")
+}
+else{
+    document.write("it is not leap year")
+}
+///////////////////////////////////////temp convertto f to c///////////////////////////
+let x = prompt("enter a number to convert into f to C"); 
+let celsius = (x - 32) * (5/9);
+document.write("temp. convert into f to c=",celsius)
+
+///////////////////////////last question 10 may///////////////////////////
+
+function Sum(x,y){
+    if(x==y){
+        return 3*(x+y)
+    }
+    else{
+        return(x+y)
+    }
+}
+// document.write(sum(4,4))
+
+let a=3;
+let b=3;
+if(a==b){
+    document.write(3*(a+b))
+}
+else{
+    document.write(a+b)
+}
 
 
 
