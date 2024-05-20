@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // Define a hexadecimal color code
+const hexCode = "#FF0000"; // For example, red color
+
+// Convert hexadecimal to RGB
+function hexToRgb(hex) {
+    // Remove the # if it's there
+    hex = hex.replace(/^#/, '');
+    // Convert each pair of hexadecimal digits to decimal
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    // Return the RGB values as an object
+    return { r, g, b };
+}
+
+// Usage
+const rgbColor = hexToRgb(hexCode);
+console.log(rgbColor); // Outputs: { r: 255, g: 0, b: 0 }
+
+   </script> 
+</body>
+</html>

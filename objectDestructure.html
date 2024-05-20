@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Imagine we have an object representing a person
+const person = {
+  name: 'John',
+  age: 30,
+  country: 'USA'
+};
+
+// Instead of accessing properties like this:
+// const name = person.name;
+// const age = person.age;
+// const country = person.country;
+
+// We can use object destructuring to do it in one line:
+const { name, age, country } = person;
+
+// Now we directly have variables with the values from the object:
+console.log(name); // Output: John
+console.log(age); // Output: 30
+console.log(country); // Output: USA
+
+    </script>
+</body>
+</html>

@@ -7,54 +7,7 @@
 </head>
 <body>
     <script>
-
-        ///////////////question-1///////////////////
-
-// let n=[2,4,6,8,10];
-// let p=n.map((m)=>m*2);
-// document.write(p);
-
-
-////////////////question-2/////////////////
-
-// const names = ["apple","plum","kiwi","watermelon"];
-// const capitalizedNames = names.map(name => name.replace(/^\w/, c => c.toUpperCase()));
-// document.write(capitalizedNames); 
-
-
-// const names = ["apple", "plum", "kiwi", "watermelon"];
-// const capitalizedNames = names.map(name => name.charAt(0).toUpperCase() + name.slice(1));
-
-// document.write(capitalizedNames);
-//////////////////////////////////////common element(QUESTION=1)/////////////////////////////
-
-// function common(x,y){
-//     return x.filter(e=>y.includes(e))
-// }
-// const x=[2,3,4,5,6];
-// const y=[7,8,4,3,2];
-// const commonElement =common(x,y);
-// document.write(commonElement)
-
-///////////////////////////////////////////////////////(QUESTION=2)////////////////////////////
-       
-
-//         let x = ["apple", "ram", "poonam", "om"];
-
-// x.sort((a, b) => a.length - b.length);
-
-// for (let i = 0; i < x.length; i++) {
-//     document.write(x[i], " ");
-// }
-
-/////////////////////////////////////////////////(QUESTION=3)//////////////////////
-// let a=1;
-// for(let i=1; i<=5; i++){
-//  a=a*i;
-// } 
-// document.write(a)
-
-// / =========================fibo series ==================================
+        // / =========================fibo series ==================================
 // let a=0 , b=1;
 //         document.write(a ," ",b);
 //         let c;
@@ -148,17 +101,17 @@
 // console.log("The area of the triangle with sides", area);
 
 /////////////////////////////leap year check///////////////////////////////
-let a= prompt("enter a year");
-if(a%4==0){
-    document.write("it is leap year")
-}
-else{
-    document.write("it is not leap year")
-}
+// let a= prompt("enter a year");
+// if(a%4==0){
+//     document.write("it is leap year")
+// }
+// else{
+//     document.write("it is not leap year")
+// }
 ///////////////////////////////////////temp convertto f to c///////////////////////////
 // let x = prompt("enter a number to convert into f to C"); 
-// let celsius = (x - 32) * (5/9);
-// let celsius = (x - 32) * (5/9);
+// // let celsius = (x - 32) * (5/9);
+// // let celsius = (x - 32) * (5/9);
 // document.write("temp. convert into f to c=",celsius)
 
 ///////////////////////////last question 10 may///////////////////////////
@@ -171,16 +124,56 @@ else{
 //         return(x+y)
 //     }
 // }
-// document.write(sum(4,4))
+// // document.write(sum(4,4))
 
-// let a=3;
-// let b=3;
+
+
+// let a=parseInt(prompt("enter a number"));
+// let b=parseInt(prompt("enter a number"));
 // if(a==b){
 //     document.write(3*(a+b))
 // }
 // else{
 //     document.write(a+b)
 // }
+
+
+
+///////////inverted half //////////////////
+// for (let i=1; i<=5; i++){
+//     for(let j=1; j<=i; j++){
+//         document.write("&nbsp"," ")
+//     }
+//     for(let k=5; k>=i; k--){
+//         document.write("*"," ")
+//     } document.write("<br>")
+// } 
+
+////////////////////////////////////////left half inverted 
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 5 - i; j++) {
+        document.write("&nbsp; ");
+    }
+    for (let k = 1; k <= i; k++) {
+        document.write("* ");
+    }
+    document.write("<br>");
+}
+
+document.write("<br>")
+///////////////////////////////////right half inverted ///
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j < i; j++) {
+        document.write("&nbsp; ");
+    }
+    for (let k = i; k <= 5; k++) {
+        document.write("* ");
+    }
+    document.write("<br>");
+}
+
+
+
 
 
 
