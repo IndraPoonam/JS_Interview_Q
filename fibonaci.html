@@ -36,18 +36,34 @@
 
 
 ////////////////////////////////////////////
-let a=prompt("enter a num");
-let b="";
-for(let i=a.length-1; i>=0; i--){
-    b +=a[i]
-};
-if(a==b){
-    document.write("it is palidrome")
-}
-else{
+// let a=prompt("enter a num");
+// let b="";
+// for(let i=a.length-1; i>=0; i--){
+//     b +=a[i]
+// };
+// if(a==b){
+//     document.write("it is palidrome")
+// }
+// else{
     
-    document.write("it is not palidrome")
+//     document.write("it is not palidrome")
+// }
+
+
+/////////////////////////////////////////////////////////////////
+let a=[12,34,2,55,12,34,6,7,2];
+for(let i=0; i<a.length; i++){
+    for(let j=i+1; j<a.length; j++){
+        if(a[i]==a[j]){
+            document.write("duplicate is=>",a[j],"<br>")
+        }
+    }
 }
+
+
+
+
+
   </script>  
 </body>
 </html>
